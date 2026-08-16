@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shashwat Gupta — Videographer &amp; Video Editor</title>
+    <meta
+      name="description"
+      content="Shashwat Gupta is a videographer and video editor based in Lucknow, India, crafting cinematic stories for brands, agencies, and production houses."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Custom cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Cinematic letterbox frame -->
+    <div class="letterbox letterbox-top">
+      <span class="hud hud-left"
+        ><span class="rec-dot"></span> REC
+        <span id="timecode">00:00:00:00</span></span
+      >
+      <span class="hud hud-right">SHASHWAT GUPTA — DP / EDITOR</span>
+    </div>
+    <div class="letterbox letterbox-bottom">
+      <span class="hud hud-left">LUCKNOW, IN</span>
+      <span class="hud hud-right"
+        >SCENE <span id="active-scene">01</span> / 10</span
+      >
+    </div>
+
+    <!-- Grain overlay -->
+    <div class="grain"></div>
+
+    <!-- Nav -->
+    <header class="nav" id="nav">
+      <a href="#top" class="nav-mark">SG<span>.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about"><span>About</span></a>
+        <a href="#services"><span>Services</span></a>
+        <a href="#video-editing"><span>Editing</span></a>
+        <a href="#videography"><span>Videography</span></a>
+        <a href="#photography"><span>Photography</span></a>
+        <a href="#experience"><span>Experience</span></a>
+        <a href="#contact" class="nav-cta">Let's Talk</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero" id="hero">
+        <!-- Background video -->
+        <div class="hero-bg" id="heroBg">
+          <video
+            class="hero-video"
+            id="heroVideo"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto"
+          >
+            <source src="assets/videos/VideoEditing/sg4.mp4" type="video/mp4" />
+          </video>
+          <div class="hero-scrim"></div>
+        </div>
+
+        <div class="hero-content container">
+          <p class="eyebrow hero-eyebrow">SCENE 01 OPENING SHOT</p>
+          <h1 class="hero-title">
+            <span class="hero-word">SHASHWAT</span><br />
+            <span class="hero-word delay-1">GUPTA</span>
+          </h1>
+          <p class="hero-sub hero-fade">
+            VideoGrapher &amp; Video Editor — Lucknow, India
+          </p>
+          <p class="hero-desc hero-fade delay-2">
+            I turn raw footage into films that hold attention, build trust, and
+            move brands forward. Every frame is composed on purpose.
+          </p>
+          <div class="hero-actions hero-fade delay-3">
+            <a href="#video-editing" class="btn btn-primary">Watch the Reel</a>
+            <a href="#contact" class="btn btn-ghost">Start a Project</a>
+          </div>
+        </div>
+        <div class="hero-scroll">
+          <span>Scroll</span>
+          <div class="scroll-line"></div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section about" id="about">
+        <!-- Radial ambient glow -->
+        <div class="about-glow"></div>
+        <div class="container about-grid">
+          <!-- Left: image with cinematic frame overlay -->
+          <div class="about-media scroll-reveal from-left">
+            <div class="about-frame">
+              <!-- corner film marks -->
+              <span class="fc fc-tl"></span>
+              <span class="fc fc-tr"></span>
+              <span class="fc fc-bl"></span>
+              <span class="fc fc-br"></span>
+              <img
+                src="assets/images/profile.jpg"
+                alt="Shashwat Gupta, videographer and video editor"
+              />
+              <!-- floating badge -->
+              <div class="about-badge">
+                <span class="about-badge-icon">&#9654;</span>
+                <div>
+                  <span class="about-badge-label">AVAILABLE FOR</span>
+                  <span class="about-badge-val">New Projects</span>
+                </div>
+              </div>
+            </div>
+            <div class="about-tag">
+              <span class="mono">EST. 2023</span>
+              <span
+                >Behind the lens, in the edit bay, and everywhere in
+                between.</span
+              >
+            </div>
+          </div>
+
+          <!-- Right: copy -->
+          <div class="about-copy scroll-reveal from-right sr-delay-2">
+            <p class="eyebrow">Scene 02 — About</p>
+            <h2 class="section-title">The person behind the footage</h2>
+            <p class="lead">
+              I'm Shashwat Gupta, a creative enthusiast passionate about
+              videography, photography, and video editing.
+            </p>
+            <p>
+              Driven by curiosity, I explore and capture diverse stories through
+              my lens, using visual media for meaningful storytelling. I
+              continuously refine my craft while creating engaging content for
+              brands, businesses, and creators — always looking for the shot,
+              the cut, or the colour grade that makes a story land.
+            </p>
+            <p>
+              I enjoy transforming ideas into cinematic visuals that connect
+              with audiences and leave a lasting impact — whether that's a
+              15-second reel or a full brand film.
+            </p>
+
+            <!-- Animated stats -->
+            <div class="about-stats scroll-reveal sr-delay-3">
+              <div class="stat">
+                <span class="stat-num" data-target="3">3</span
+                ><span class="stat-suffix">+</span>
+                <span class="stat-label">Years shooting &amp; editing</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num" data-target="5">5</span
+                ><span class="stat-suffix"></span>
+                <span class="stat-label">Brands &amp; studios worked with</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num" data-target="8">8</span
+                ><span class="stat-suffix"></span>
+                <span class="stat-label">Industries served</span>
+              </div>
+            </div>
+
+            <!-- Tool badges -->
+            <div class="about-tools scroll-reveal sr-delay-4">
+              <span class="tool-badge">Premiere Pro</span>
+              <span class="tool-badge">DaVinci Resolve</span>
+              <span class="tool-badge">After Effects</span>
+              <span class="tool-badge">CapCut</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section class="section services" id="services">
+        <div class="container">
+          <p class="eyebrow scroll-reveal" style="justify-content: center">
+            Scene 03 — Services
+          </p>
+          <h2
+            class="section-title scroll-reveal sr-delay-1"
+            style="text-align: center; margin-left: auto; margin-right: auto"
+          >
+            What I bring to a project
+          </h2>
+          <p class="lead lead-center scroll-reveal sr-delay-2">
+            From first frame to final export — production and post, handled with
+            intent.
+          </p>
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="sc-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"
+                  />
+                  <polyline points="14 2 14 8 20 8" />
+                  <line x1="16" y1="13" x2="8" y2="13" />
+                  <line x1="16" y1="17" x2="8" y2="17" />
+                  <polyline points="10 9 9 9 8 9" />
+                </svg>
+              </div>
+              <span class="service-index">01</span>
+              <h3>Video Editing</h3>
+              <p>Story-first edits that keep every second earning attention.</p>
+            </div>
+            <div class="service-card">
+              <div class="sc-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <rect x="2" y="3" width="20" height="14" rx="2" />
+                  <path d="m10 17 5 4H9l5-4" />
+                </svg>
+              </div>
+              <span class="service-index">02</span>
+              <h3>Cinematic Editing</h3>
+              <p>
+                Mood, pacing, and rhythm crafted for brand films and narratives.
+              </p>
+            </div>
+            <div class="service-card">
+              <div class="sc-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <polygon points="5 3 19 12 5 21 5 3" />
+                </svg>
+              </div>
+              <span class="service-index">03</span>
+              <h3>Commercial Ads</h3>
+              <p>Punchy, conversion-ready ads built for the scroll.</p>
+            </div>
+            <div class="service-card">
+              <div class="sc-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path d="M12 2a10 10 0 1 0 10 10" />
+                  <path d="M12 6v6l4 2" />
+                </svg>
+              </div>
+              <span class="service-index">04</span>
+              <h3>Short-Form Content</h3>
+              <p>Reels and shorts engineered for retention and reach.</p>
+            </div>
+            <div class="service-card">
+              <div class="sc-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </div>
+              <span class="service-index">05</span>
+              <h3>Instagram Reels</h3>
+              <p>Trend-aware edits tuned to platform behaviour.</p>
+            </div>
+            <div class="service-card">
+              <div class="sc-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    d="M22.54 6.42a2.78 2.78 0 0 0-2-1.94C18.88 4 12 4 12 4s-6.88 0-8.54.48a2.78 2.78 0 0 0-2 1.94A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.46 19.5C5.12 20 12 20 12 20s6.88 0 8.54-.48a2.78 2.78 0 0 0 2-1.94A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"
+                  />
+                  <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" />
+                </svg>
+              </div>
+              <span class="service-index">06</span>
+              <h3>YouTube Editing</h3>
+              <p>Long-form pacing that respects the viewer's time.</p>
+            </div>
+            <div class="service-card">
+              <div class="sc-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <circle cx="12" cy="12" r="3" />
+                  <path
+                    d="M3 12h1m16 0h1M12 3v1m0 16v1M5.6 5.6l.7.7m11.4 11.4.7.7M5.6 18.4l.7-.7m11.4-11.4.7-.7"
+                  />
+                </svg>
+              </div>
+              <span class="service-index">07</span>
+              <h3>Colour Grading</h3>
+              <p>A consistent, cinematic look across every deliverable.</p>
+            </div>
+            <div class="service-card">
+              <div class="sc-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                </svg>
+              </div>
+              <span class="service-index">08</span>
+              <h3>Motion Graphics</h3>
+              <p>
+                Titles, lower-thirds, and transitions that feel intentional.
+              </p>
+            </div>
+            <div class="service-card">
+              <div class="sc-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path d="M23 7l-7 5 7 5V7z" />
+                  <rect x="1" y="5" width="15" height="14" rx="2" />
+                </svg>
+              </div>
+              <span class="service-index">09</span>
+              <h3>Videography</h3>
+              <p>On-location shooting with a plan, not just a camera.</p>
+            </div>
+            <div class="service-card">
+              <div class="sc-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <rect x="2" y="7" width="20" height="14" rx="2" />
+                  <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                </svg>
+              </div>
+              <span class="service-index">10</span>
+              <h3>Product Shoots</h3>
+              <p>Clean, deliberate visuals that sell the product.</p>
+            </div>
+            <div class="service-card">
+              <div class="sc-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </div>
+              <span class="service-index">11</span>
+              <h3>Event Coverage</h3>
+              <p>
+                Weddings, launches, and celebrations, captured as they happen.
+              </p>
+            </div>
+            <div class="service-card">
+              <div class="sc-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <span class="service-index">12</span>
+              <h3>Instagram Management</h3>
+              <p>Content strategy and posting that keeps a page alive.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- VIDEO EDITING PORTFOLIO -->
+      <section class="section portfolio" id="video-editing">
+        <!-- Section background video -->
+        <video
+          class="section-bg-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="auto"
+        >
+          <source src="assets/videos/bgvideoforEVP.mp4" type="video/mp4" />
+        </video>
+        <div class="section-bg-scrim"></div>
+        <div class="container">
+          <p class="eyebrow">Scene 04 — Video Editing Reel</p>
+          <h2 class="section-title">Edits built to hold attention</h2>
+          <p class="lead lead-center">
+            A selection of edited work — brand films, event reels, institutional
+            films, and short-form content. Click any project to watch.
+          </p>
+          <div class="grid-cards" id="editingGrid"></div>
+        </div>
+      </section>
+
+      <!-- VIDEOGRAPHY PORTFOLIO -->
+      <section class="section portfolio alt" id="videography">
+        <!-- Section background video -->
+        <video
+          class="section-bg-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="auto"
+        >
+          <source src="assets/videos/bgvideoforEVP.mp4" type="video/mp4" />
+        </video>
+        <div class="section-bg-scrim"></div>
+        <div class="container">
+          <p class="eyebrow">Scene 05 — Videography Reel</p>
+          <h2 class="section-title">Shot on location, framed with intent</h2>
+          <p class="lead lead-center">
+            Raw production work — hospitality, food, nature, events, and
+            documentary shoots. Click any project to watch.
+          </p>
+          <div class="grid-cards" id="videographyGrid"></div>
+        </div>
+      </section>
+
+      <!-- PHOTOGRAPHY -->
+      <section class="section photography" id="photography">
+        <div class="container">
+          <p class="eyebrow">Scene 06 — Photography</p>
+          <h2 class="section-title">Stills from the same eye</h2>
+          <p class="lead lead-center">
+            Nine frames — people, light, and place, captured between shoots.
+          </p>
+          <div class="photo-grid" id="photoGrid"></div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section class="section experience" id="experience">
+        <div class="container">
+          <p class="eyebrow">Scene 07 — Experience</p>
+          <h2 class="section-title">Where the work has taken me</h2>
+          <div class="timeline" id="timeline"></div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section skills" id="skills">
+        <div class="container">
+          <p class="eyebrow">Scene 08 — Skill Set</p>
+          <h2 class="section-title">Tools, craft, and range</h2>
+          <div class="skills-grid">
+            <div class="skill-block">
+              <h3 class="mono">Editing Software</h3>
+              <ul class="tag-list">
+                <li>Adobe Premiere Pro</li>
+                <li>DaVinci Resolve</li>
+                <li>CapCut</li>
+                <li>Adobe Photoshop</li>
+                <li>Canva</li>
+              </ul>
+            </div>
+            <div class="skill-block">
+              <h3 class="mono">AI Tools</h3>
+              <ul class="tag-list">
+                <li>Veo 3</li>
+                <li>Kling</li>
+                <li>ChatGPT</li>
+                <li>Gemini</li>
+                <li>Perplexity</li>
+                <li>Higgsfield</li>
+                <li>ElevenLabs</li>
+                <li>Captions.ai</li>
+              </ul>
+            </div>
+            <div class="skill-block">
+              <h3 class="mono">Core Skills</h3>
+              <ul class="tag-list">
+                <li>Videography</li>
+                <li>Visual Composition</li>
+                <li>Lighting Analysis</li>
+                <li>Colour Grading</li>
+                <li>Camera Operations</li>
+                <li>Storyboarding</li>
+                <li>Shot Planning</li>
+                <li>Video Production</li>
+                <li>Social Media Content</li>
+                <li>Trend Analysis</li>
+              </ul>
+            </div>
+            <div class="skill-block">
+              <h3 class="mono">Industries Served</h3>
+              <ul class="tag-list">
+                <li>Hotels</li>
+                <li>Hospitals</li>
+                <li>Schools</li>
+                <li>Colleges</li>
+                <li>Restaurants</li>
+                <li>Business Firms</li>
+                <li>Salons</li>
+                <li>Celebration Events</li>
+              </ul>
+            </div>
+            <div class="skill-block">
+              <h3 class="mono">Languages</h3>
+              <ul class="tag-list">
+                <li>English</li>
+                <li>Hindi</li>
+              </ul>
+            </div>
+            <div class="skill-block">
+              <h3 class="mono">Soft Skills</h3>
+              <ul class="tag-list">
+                <li>Leadership</li>
+                <li>Communication</li>
+                <li>Presentation</li>
+                <li>Adaptability</li>
+                <li>Active Listening</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="section testimonials" id="testimonials">
+        <div class="container">
+          <p class="eyebrow">Scene 09 — Testimonials</p>
+          <h2 class="section-title">What clients say</h2>
+          <p class="lead lead-center mono-note">
+            Placeholder quotes — swap in real client testimonials as they come
+            in.
+          </p>
+          <div class="testimonial-grid">
+            <div class="testimonial-card">
+              <p>
+                "Shashwat understood our brand voice instantly and delivered
+                reels that actually moved the needle on engagement."
+              </p>
+              <div class="testimonial-author">
+                <span class="t-name">Client Name</span
+                ><span class="t-role">Marketing Lead, Placeholder Brand</span>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <p>
+                "Professional, punctual, and endlessly patient with revisions.
+                The final cut felt like a completely different level of
+                production."
+              </p>
+              <div class="testimonial-author">
+                <span class="t-name">Client Name</span
+                ><span class="t-role">Founder, Placeholder Studio</span>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <p>
+                "He doesn't just film events — he captures the feeling of the
+                room. Our highlight reel still gives us chills."
+              </p>
+              <div class="testimonial-author">
+                <span class="t-name">Client Name</span
+                ><span class="t-role">Event Organiser</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section contact" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-copy">
+            <p class="eyebrow">Scene 10 — Final Cut</p>
+            <h2 class="section-title">Let's make something worth watching</h2>
+            <p class="lead">
+              Have a brand story, a launch, or an event that needs a lens on it?
+              Tell me about the project and I'll get back to you within a day or
+              two.
+            </p>
+            <ul class="contact-info">
+              <li>
+                <span class="mono">Email</span
+                ><a href="mailto:shashwatgupta4626@gmail.com"
+                  >shashwatgupta4626@gmail.com</a
+                >
+              </li>
+              <li>
+                <span class="mono">Instagram</span
+                ><a
+                  href="https://www.instagram.com/wakeup_shash"
+                  target="_blank"
+                  rel="noopener"
+                  >@wakeup_shash</a
+                >
+              </li>
+              <li>
+                <span class="mono">LinkedIn</span
+                ><a
+                  href="https://www.linkedin.com/in/shashwat-gupta-910663287"
+                  target="_blank"
+                  rel="noopener"
+                  >shashwat-gupta</a
+                >
+              </li>
+              <li>
+                <span class="mono">Location</span><span>Lucknow, India</span>
+              </li>
+            </ul>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@company.com"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="What's the project?"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Tell me a bit more..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              Send Message
+            </button>
+            <p class="form-note" id="formNote"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <a href="#top" class="nav-mark">SG<span>.</span></a>
+        <p>© <span id="year"></span> Shashwat Gupta. All frames reserved.</p>
+        <div class="footer-links">
+          <a href="mailto:shashwatgupta4626@gmail.com">Email</a>
+          <a
+            href="https://www.instagram.com/wakeup_shash"
+            target="_blank"
+            rel="noopener"
+            >Instagram</a
+          >
+          <a
+            href="https://www.linkedin.com/in/shashwat-gupta-910663287"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+        &times;
+      </button>
+      <button
+        class="lightbox-nav lightbox-prev"
+        id="lightboxPrev"
+        aria-label="Previous"
+      >
+        &#8249;
+      </button>
+      <div class="lightbox-content" id="lightboxContent"></div>
+      <button
+        class="lightbox-nav lightbox-next"
+        id="lightboxNext"
+        aria-label="Next"
+      >
+        &#8250;
+      </button>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
